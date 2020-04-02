@@ -40,7 +40,7 @@ require(['config'], function () {//第三方模块 先加载配置文件
         }, 4000)
 
         //鼠标移入关闭定时器的自动轮播
-        $('.banner_img').hover(function () {
+        $('.banner_img img').hover(function () {
             clearInterval(timer)
         }, function () {
             //鼠标移出开启定时器的自动轮播

@@ -34,6 +34,13 @@ gulp.task('uglifyhtml', () => {
         .pipe(gulp.dest('dist/html/'));
 })
 
+//压缩index.html
+gulp.task('indexuglifyhtml', () => {
+    return gulp.src('*.html')
+        .pipe(html())
+        .pipe(gulp.dest('dist/'));
+})
+
 
 //2.css文件进行压缩
 gulp.task('uglifycss', () => {

@@ -10,7 +10,7 @@
       }
     }).done(function (w) {
       if (w) {
-        location.href = "../html/index_360.html";
+        location.href = "../../index.html";
         $.cookie('username', $('.name').val(), { expires: 10, path: '/' })
       } else {
         $('.pass').val('')
